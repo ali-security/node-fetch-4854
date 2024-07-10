@@ -178,7 +178,8 @@ export default function fetch(url, opts) {
 							method: request.method,
 							body: request.body,
 							signal: request.signal,
-							timeout: request.timeout
+							timeout: request.timeout,
+							size: request.size
 						};
 
 						if (!isDomainOrSubdomain(request.url, locationURL)) {
